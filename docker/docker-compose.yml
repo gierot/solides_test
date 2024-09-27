@@ -5,12 +5,6 @@ services:
     container_name: my-mysql
     restart: always
     environment:
-      - DB_CONNECTION=mysql
-      - DB_HOST=127.0.0.1
-      - DB_PORT=3306
-      - DB_DATABASE=mysqlDB
-      - DB_USERNAME=admin
-      - DB_PASSWORD=mysqlPW
       - MYSQL_USER=admin
       - MYSQL_DATABASE=mysqlDB
       - MYSQL_PASSWORD=mysqlPW
