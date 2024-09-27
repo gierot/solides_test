@@ -1,5 +1,5 @@
 -- cria o banco de dados
-CREATE DATABASE IF NOT EXISTS user;
+CREATE DATABASE IF NOT EXISTS mysqlDB;
 
 -- cria o usuario admin e define a senha
 CREATE USER 'admin'@'127.0.0.1' IDENTIFIED BY 'mysqlPW';

@@ -16,6 +16,16 @@ echo "MySQL está pronto!"
 # Retorna ao diretório principal
 cd ..
 
+ENV_FILE=".env"
+
+# Atualiza as variáveis de ambiente no .env
+sed -i "s/^DB_CONNECTION=.*/DB_CONNECTION=mysql/" $ENV_FILE
+sed -i "s/^DB_HOST=.*/DB_HOST=127.0.0.1/" $ENV_FILE
+sed -i "s/^DB_PORT=.*/DB_PORT=3306/" $ENV_FILE
+sed -i "s/^DB_DATABASE=.*/DB_DATABASE=mysqlDB/" $ENV_FILE
+sed -i "s/^DB_USERNAME=.*/DB_USERNAME=admin/" $ENV_FILE
+sed -i "s/^DB_PASSWORD=.*/DB_PASSWORD=mysqlPW/" $ENV_FILE
+
 # Instala as dependências do composer
 composer install
 
