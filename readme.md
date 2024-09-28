@@ -26,3 +26,4 @@ Após instalar as dependências, você precisará verificar e modificar as confi
 
    ```ini
    ;extension=mysqli
+   ;extension=php_pdo_mysql
