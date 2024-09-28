@@ -16,6 +16,9 @@ echo "MySQL está pronto!"
 # Retorna ao diretório principal
 cd ..
 
+#copiara  aenv de exemplo para a env principal
+cp .env.example .env
+
 ENV_FILE=".env"
 
 # Atualiza as variáveis de ambiente no .env
